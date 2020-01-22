@@ -64,14 +64,14 @@
    
    // Dot notation
    
-   const user2 = object.create(null);
+   const user2 = Object.create(null);
    user2.name = "Turner"
    user2.score = 4;
    user2.incrementScore = function(){
       user2.score++;
    }
    
-   // Using function to remove duplication
+   // Using function to create object
    
    function userCreator(name, score){
       const newUser = {};
@@ -86,6 +86,56 @@
    const user1 = userCreator("Jack", 4);
    const user2 = userCreator("Turner", 5);
    user1.incrementScore();
+   
+   // Using Protype 
+   
+   function userCreator(name, score){
+      const newUser = Object.create(userFuctionStore);;
+      newuser.name = name;
+      newUser.score = score;
+      return newUser;
+   }
+   
+   const userFuctionStore = {
+      incrementScore: function(){this.score++}
+   }
+   
+   const user1 = userCreator("Jack", 4);
+   const user2 = userCreator("Turner", 5);
+   user1.incrementScore();
+   
+    // Using new keyword 
+   
+   function UserCreator(name, score){
+      this.name = name;
+      this.score = score; 
+   }
+   
+   UserCreator.prototype.incrementScore = function() {
+      this.score++;
+   }
+   
+   const user1 = new UserCreator("Jack", 4);
+   const user2 = UserCreator("Turner", 5);
+   user1.incrementScore();
+   
+   // Using class  keyword 
+   
+      class User {
+         constructor(name,score){
+            this.name = name;
+            this.score = score;
+         }
+      
+         incrementScore(){
+            this.score++;
+         }
+      
+      }
+      
+   let user1 = new User("Jack", 9);
+   user1.increment();
+   
    
 
 ```
@@ -106,8 +156,8 @@
    ```javascript 
       class User {
          constructor(name,score){
-         this.name = name;
-         this.score = score;
+            this.name = name;
+            this.score = score;
          }
       
          increment(){
