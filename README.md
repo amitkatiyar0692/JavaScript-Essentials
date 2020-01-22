@@ -50,7 +50,7 @@
 ## Encapsulate property and fuctions in javascript object using dot notation.
 
 ## Various ways of creating object in JavaScript. Explain all of them with there downsides and benifites.
-``` javascript
+```javascript
 
    //  Object literal
    
@@ -140,6 +140,29 @@
 
 ```
 
+####  Explain below code , will it work , if not then how to fix  ?
+   ```javascript
+   function UserCreator(name, score){
+      this.name = name;
+      this.score = score; 
+   }
+   
+   UserCreator.prototype.incrementScore = function() {
+      add1(){
+          this.score++;
+      }
+      add1();
+     
+   }
+   
+   const user1 = new UserCreator("Jack", 4);
+   const user2 = UserCreator("Turner", 5);
+   user1.incrementScore();
+   
+   ```
+
+## What are Arrow(fat arrow) functions ?
+
 ## How to lift off shared functions from objects
 
 ## Prototypical nature of JavaScript?
@@ -151,6 +174,8 @@
 ## Explain want happens when we call function with new keyword 
 
 ## What is Object.prototype ?
+
+## Explain default prototype chain and how we change it.
 
 ## Convert Class syntatic sugar code to ECMAScript 5 
    ```javascript 
@@ -168,4 +193,25 @@
       
    let user1 = new User("Jack", 9);
    user1.increment();
+   ```
+   
+## Demonstrate inheritance with and without using class keyword
+
+## Explain woring of .call() and .apply() functions
+   ```javascript
+   
+   const obj = {
+      num: 1
+      increment: function(){this.name ++ ;}
+   }
+   
+      const otherObj = {
+      num: 15
+   }
+   
+   obj.increment()
+   
+   obj.increment.call(otherObj)
+   
+   
    ```
