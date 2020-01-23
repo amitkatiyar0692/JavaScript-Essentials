@@ -1,55 +1,59 @@
-# JavaScript-Essentials
+# Basics
 
-## What is Global Execution Context ?
+### Why javascript is a scripting language but Java is not ?
 
-## What is Local Execution Context ?
+# Advanced
 
-## What is Call Stack ?
+### What is Global Execution Context ?
 
-## Is javascript multithreaded ?
+### What is Local Execution Context ?
 
-## Is javascript has asynchronous  execution model?
+### What is Call Stack ?
 
-## What is Event Loop ?
+### Is javascript multithreaded ?
 
-## Callback/Macro-Task Queue? 
+### Is javascript has asynchronous  execution model?
 
-## What is Micro Task Queue ?
+### What is Event Loop ?
 
-## Explain setTimout function.
+### Callback/Macro-Task Queue? 
 
-## When our asynchrnously delayed code gets executed ? 
+### What is Micro Task Queue ?
 
-## Pure Functions ?
+### Explain setTimout function.
 
-## High Order Functions ?
+### When our asynchrnously delayed code gets executed ? 
+
+### Pure Functions ?
+
+### High Order Functions ?
    1. copyArrayAndAdd , copyArrayAndMultiply vs copyArrayAndManipulate
    
-## CallBack vs High Order fucntion?   
+### CallBack vs High Order fucntion?   
 
-## First Order Function ?
+### First Order Function ?
 
-## Are function First-Class Object ?
+### Are function First-Class Object ?
 
-## Functions are object first rather than function.
+### Functions are object first rather than function.
 
-## What Is Closure?
+### What Is Closure?
 
-## Use Cases of using Closure ?
+### Use Cases of using Closure ?
 
-## Memoization ?
+### Memoization ?
 
-## Prevention from polluting global namespace?
+### Prevention from polluting global namespace?
 
-## Lexical/static Scope ?
+### Lexical/static Scope ?
 
-## Is all variables available at lexical scope are inclosed in function closure ?
+### Is all variables available at lexical scope are inclosed in function closure ?
 
-## Encapsulate property and fuctions in javascript object.
+### Encapsulate property and fuctions in javascript object.
 
-## Encapsulate property and fuctions in javascript object using dot notation.
+### Encapsulate property and fuctions in javascript object using dot notation.
 
-## Various ways of creating object in JavaScript. Explain all of them with there downsides and benifites.
+### Various ways of creating object in JavaScript. Explain all of them with there downsides and benifites.
 ```javascript
 
    //  Object literal
@@ -161,23 +165,23 @@
    
    ```
 
-## What are Arrow(fat arrow) functions ?
+### What are Arrow(fat arrow) functions ?
 
-## How to lift off shared functions from objects
+### How to lift off shared functions from objects
 
-## Prototypical nature of JavaScript?
+### Prototypical nature of JavaScript?
 
-## Explain Object.create(commonObject)
+### Explain Object.create(commonObject)
 
-## Explain __ proto__ 
+### Explain __ proto__ 
 
-## Explain want happens when we call function with new keyword 
+### Explain want happens when we call function with new keyword 
 
-## What is Object.prototype ?
+### What is Object.prototype ?
 
-## Explain default prototype chain and how we change it.
+### Explain default prototype chain and how we change it.
 
-## Convert Class syntatic sugar code to ECMAScript 5 
+### Convert Class syntatic sugar code to ECMAScript 5 
    ```javascript 
       class User {
          constructor(name,score){
@@ -195,9 +199,9 @@
    user1.increment();
    ```
    
-## Demonstrate inheritance with and without using class keyword
+### Demonstrate inheritance with and without using class keyword
 
-## Explain woring of .call() and .apply() functions
+### Explain woring of .call() and .apply() functions
    ```javascript
    
    const obj = {
